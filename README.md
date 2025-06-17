@@ -14,8 +14,9 @@ aiming to understand and act on air quality trends.
 ## Purpose
 
 ```
-This project is built with the vision of promoting environmental awareness and data-driven decisions.
-From students to civic bodies, anyone can benefit from understanding how pollution trends evolve and take action
+This project is built with the vision of promoting environmental
+awareness and data-driven decisions.From students to civic bodies, anyone can
+benefit from understanding how pollution trends evolve and take action
 toward cleaner air.
 ```
 
