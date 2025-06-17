@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Quality Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cleaned Air Quality Data</h1>
+    <h2>Ask a Question</h2>
+<form method="POST" action="/ask">
+    <input type="text" name="question" placeholder="e.g., Which country has the worst air quality?" style="width: 300px;" required>
+    <button type="submit">Ask</button>
+</form>
+
+{% if answer %}
+    <h3>Answer:</h3>
+    <p>{{ answer }}</p>
+{% endif %}
+    <h2>Data Overview</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th>AQI Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for doc in data %}
+            <tr>
+                <td>{{ doc['Date'] }}</td>
+                <td>{{ doc['Country'] }}</td>
+                <td>{{ doc['Status'] }}</td>
+                <td>{{ doc['AQI Value'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
