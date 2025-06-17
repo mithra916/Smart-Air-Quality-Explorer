@@ -2,9 +2,13 @@
 
 ## About the Project
 ```
-Smart Air Quality Explorer is a powerful Python-based system that focuses on transforming raw air quality datasets into meaningful insights. It helps in cleaning, storing, and optionally visualizing air pollution data using modern tools such as Pandas, MongoDB, and HTML dashboards.
+Smart Air Quality Explorer is a powerful Python-based system that focuses on transforming
+raw air quality datasets into meaningful insights. It helps in cleaning,
+storing, and optionally visualizing air pollution data using modern tools
+such as Pandas, MongoDB, and HTML dashboards.
 
-This project can benefit researchers, students, data scientists, and policymakers aiming to understand and act on air quality trends.
+This project can benefit researchers, students, data scientists, and policymakers
+aiming to understand and act on air quality trends.
 ```
 
 ## Purpose
